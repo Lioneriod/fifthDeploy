@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    background-color: #008080;
+    color: #f5faef;
+    font-weight: 800;
+    font-size: 16px;
+    font-family: "Roboto Mono", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.left img{
+    display: flex;
+    flex: 1;
+    height: 30px;
+    width: auto;
+}
+
+.right{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.right ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.right li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.body{
+    display: flex;
+    flex: 1 1 initial;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px 40px 80px;
+    gap: 50px;
+    color: #008080;
+    background-color: #f5faef;
+}
+
+.body > .battle{
+    display: flex;
+    flex: 1 1 initial;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.body > .battle > .enemy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.narrator,
+.talk{
+    display: flex;
+    max-width: 800px;
+    flex: 1 1 initial;
+}
+
+.talk{
+    font-family: "VT323", sans-serif;
+    font-size: 30px;
+}
+
+.body > .battle > .enemy > img{
+    display: flex;
+    flex: 1 1 initial;
+    max-width: 255px;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: 20% 65%; 
+}
+
+.body > .battle > .player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "VT323", sans-serif;
+    font-size: 30px;
+    gap: 1px;
+}
+
+.body > .battle > .player > .hands{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.body > .battle > .player > .hands > button,
+.body > .battle > .player > .hands > button > img{
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+.body > .battle > .player > .hands > button{
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #005f5f;
+    border: 2px solid #008080;
+    transition: ease-out 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.body > .battle > .player > .hands > button:hover{
+    background-color: #008080;
+}
+
+.body > .battle > .player > .hands > button > img{
+    margin: 0 auto;
+    text-align: center;
+    filter: invert(100%) sepia(51%) saturate(426%) 
+    hue-rotate(1deg) brightness(110%) contrast(96%);
+}
+
+.body .score{
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #008080;
+    height: 500px;
+    width: auto;
+    flex: 1 1 initial;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 0px 50px 0px 50px;
+}
+
+.announcer{
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.announcerHand{
+    padding-bottom: 35px;
+}
+
+.narrator,
+.score{
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 25px;
+}
+
+.result{
+    padding-top: 15px;
+    padding-bottom: 0px;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    max-width: 280px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 16px 10px;
+    background-color: #008080;
+    color: #f5faef;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Roboto Mono", sans-serif;
+}
